@@ -1,0 +1,12 @@
+push1 0x20	# Tamanho saida
+push1 0x00	# endereço saida
+push1 0x40	# tamanho entrada
+push1 $mem_data_location$	# endereço entrada
+push1 0x00
+push20 $contract_address$
+gas
+call
+push1 0x20
+push1 0x00
+return
+0000000000000000000000000000000000000000000000000000000000000000 0000000000000000000000000000000000000000000000000000000000000000
